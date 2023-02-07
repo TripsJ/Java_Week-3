@@ -1,10 +1,10 @@
 public class CommandChecker {
-    private enum primaryCmd {
-        MONTHLY_TOTAL("monthly total"),
-        YEARLY_TOTAL("yearly total"),
+     enum primaryCmd {
+        MONTHLY_TOTAL("monthly_total"),
+        YEARLY_TOTAL("yearly_total"),
         HELP("help"),
-        YEARLY_AVERAGE("yearly average"),
-        MONTHLY_AVERAGE("monthly average")
+        YEARLY_AVERAGE("yearly_average"),
+        MONTHLY_AVERAGE("monthly_average")
         // Maximun T_MAX,
         ;
 
@@ -25,4 +25,5 @@ public class CommandChecker {
         return checkedInput;
     }
 }
+
 

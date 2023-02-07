@@ -1,2 +1,25 @@
-package PACKAGE_NAME;public class ObjectMapper {
+
+import com.opencsv.bean.CsvToBeanBuilder;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+public class ObjectMapper {
+    String fileName = "";
+
+    ObjectMapper(String fileName){
+        this.fileName = fileName;
+    }
+    public void create() throws IOException {
+
+
+        List<Trademodel> beans = new CsvToBeanBuilder(new FileReader(this.fileName))
+                .withType(Trademodel.class)
+                .build()
+                .parse();
+
+        beans.forEach(System.out::println);
+
+    }
+
 }

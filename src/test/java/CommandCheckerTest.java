@@ -19,8 +19,8 @@ class CommandCheckerTest {
 
     @Test
     void TestprimaryCmd() {
-        String[] inputs = {"monthly total", "yearly total", "help", "yearly average", "monthly average","MONTHLY TOTAL","YeARLY TOTal","","Some random BullShit 56"};
-        String[] expected = {"monthly total", "yearly total", "help", "yearly average", "monthly average","monthly total","yearly total","",""};
+        String[] inputs = {"monthly_total", "yearly_total", "help", "yearly_average", "monthly_average","MONTHLY_TOTAL","YeARLY_TOTal","","Some random BullShit 56","monthly total"};
+        String[] expected = {"monthly_total", "yearly_total", "help", "yearly_average", "monthly_average","monthly_total","yearly_total","","",""};
         for (int i = 0; i < inputs.length; i++) {
 
             assertEquals(expected[i], commandChecker.checkInput(inputs[i]));

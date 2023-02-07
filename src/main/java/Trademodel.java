@@ -3,26 +3,28 @@ import com.opencsv.bean.CsvBindByName;
 public class Trademodel {
 
     //Attributes
+    // Direction,Year,Date,Weekday,Country,Commodity,Transport_Mode,Measure,Value,Cumulative
     static int lines = 0;
-    @CsvBindByName(column = "start ip")
+    private int entry = lines;
+    @CsvBindByName(column = "Direction")
     private String direction;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Year")
     private String year;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Date")
     private String date;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Weekday")
     private String day;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Country")
     private String country;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Commodity")
     private String commodity;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Transport_Mode")
     private String transport;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Measure")
     private String measure;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Value")
     private String value;
-    @CsvBindByName(column = "start ip")
+    @CsvBindByName(column = "Cumulative")
     private String cumulative;
 
 
@@ -44,7 +46,7 @@ public class Trademodel {
         return direction;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
@@ -85,7 +87,7 @@ public class Trademodel {
         this.direction = direction;
     }
 
-    public void setYear(int year) {this.year = year;}
+    public void setYear(String year) {this.year = year;}
 
     public void setDate(String date) {
         this.date = date;
@@ -120,7 +122,22 @@ public class Trademodel {
     }
 
 
-
+// Format the printed output of the object
+    @Override
+    public String toString() {
+        return "Trademodel " + entry +" / "+lines + " : \n{ " +
+                "direction='" + direction + '\'' +
+                ", year='" + year + '\'' +
+                ", date='" + date + '\'' +
+                ", day='" + day + '\'' +
+                ", country='" + country + '\'' +
+                ", commodity='" + commodity + '\'' +
+                ", transport='" + transport + '\'' +
+                ", measure='" + measure + '\'' +
+                ", value='" + value + '\'' +
+                ", cumulative='" + cumulative + '\'' +
+                '}';
+    }
 
 
 
