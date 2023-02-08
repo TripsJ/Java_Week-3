@@ -15,6 +15,22 @@ public class CommandChecker {
         }
     }
 
+    enum secondaryCmd {
+        MONTHLY_TOTAL("monthly_total"),
+        YEARLY_TOTAL("yearly_total"),
+        HELP("help"),
+        YEARLY_AVERAGE("yearly_average"),
+        MONTHLY_AVERAGE("monthly_average")
+        // Maximun T_MAX,
+        ;
+
+        private final String expectedInput;
+
+        secondaryCmd(String expectedInput) {
+            this.expectedInput = expectedInput;
+        }
+    }
+
     public String checkInput(String input) {
         String checkedInput = "";
         for (primaryCmd cmd : primaryCmd.values()) {

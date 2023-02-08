@@ -10,7 +10,7 @@ public class ObjectMapper {
     ObjectMapper(String fileName){
         this.fileName = fileName;
     }
-    public void create() throws IOException {
+    public List<Trademodel> create() throws IOException {
 
 
         List<Trademodel> beans = new CsvToBeanBuilder(new FileReader(this.fileName))
@@ -19,6 +19,7 @@ public class ObjectMapper {
                 .parse();
 
         beans.forEach(System.out::println);
+        return beans;
 
     }
 

@@ -1,11 +1,13 @@
 import java.io.IOException;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         CommandChecker checker = new CommandChecker();
+        List<Trademodel> data;
         ObjectMapper om = new ObjectMapper("covid_and_trade.csv");
         try {
-            om.create();
+            data  = om.create();
         }catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -15,10 +17,10 @@ public class Main {
         System.out.println(input);
         String verifiedInput = checker.checkInput(input);
         switch (verifiedInput) {
-            case "monthly_total" -> analyzer.getMonthlyTotal();
-            case "yearly_total" -> analyzer.getYearlyTotal();
-            case "yearly_average" -> analyzer.getYearlyAverage();
-            case "monthly_average" -> analyzer.getMonthlyAverage();
+            case "monthly_total" -> analyzer.getMonthlyTotal(data);
+            case "yearly_total" -> analyzer.getYearlyTotal(data);
+            case "yearly_average" -> analyzer.getYearlyAverage(data);
+            case "monthly_average" -> analyzer.getMonthlyAverage(data);
             default -> helper.description();
         }
 

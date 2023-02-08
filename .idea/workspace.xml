@@ -6,15 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5fa5228a-f114-4e5f-b91f-e73ad4b6da0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Analyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CommandChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CommandChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ObjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Trademodel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Trademodel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommandCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommandCheckerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +74,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Covid_Commandline" />
+      <option name="PROGRAM_PARAMETERS" value="yearly_average" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.CommandCheckerTest.test" />
+      <item itemvalue="JUnit.CommandCheckerTest.TestprimaryCmd" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -123,12 +124,26 @@
       <workItem from="1675412600930" duration="6446000" />
       <workItem from="1675671006368" duration="9624000" />
       <workItem from="1675755512389" duration="284000" />
-      <workItem from="1675756710860" duration="11386000" />
+      <workItem from="1675756710860" duration="11479000" />
+      <workItem from="1675843669009" duration="7306000" />
+      <workItem from="1675861768285" duration="3099000" />
+      <workItem from="1675865774815" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
