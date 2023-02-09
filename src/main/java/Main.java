@@ -16,6 +16,8 @@ public class Main {
         String input = args[0];
         System.out.println(input);
         String verifiedInput = checker.checkInput(input);
+        if(args.length>1){
+        data = analyzer.preselect(data,args[1]);}
         switch (verifiedInput) {
             case "monthly_total" -> analyzer.getMonthlyTotal(data);
             case "yearly_total" -> analyzer.getYearlyTotal(data);

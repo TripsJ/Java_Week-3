@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import java.util.List;
@@ -7,7 +8,14 @@ import java.util.stream.Stream;
 public class Analyzer {
 
 public List<Trademodel> preselect (List<Trademodel>dataset,String filterBy){
-    List<Trademodel>filteredList;
+    List<Trademodel>filteredList = new ArrayList<>();
+    for (Trademodel t:dataset
+         ) {
+        if (t.toString().contains(filterBy)){
+            filteredList.add(t);
+        }
+        
+    }
 
     return filteredList;
 }
